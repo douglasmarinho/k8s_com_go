@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: goerver-service
+spec:
+  selector:
+    app: goerver
+  type: LoadBalancer
+  ports:
+  - name: goerver-service
+    port: 8080
+    protocol: TCP
